@@ -1,0 +1,39 @@
+1.  \dt
+
+2.  \du
+
+3. SELECT * FROM OWNERS
+
+4. SELECT * FROM "owners" ORDER BY age ASC;
+
+5.  SELECT 
+
+6. SELECT * FROM owners WHERE name='Mary';
+
+7. SELECT * FROM owners WHERE age > 30;
+
+8. SELECT * FROM owners WHERE name LIKE 'E%';
+
+9. INSERT INTO owners (name,age) VALUES ('John', 33);
+
+10. INSERT INTO owners (name,age) VALUES ('Jane', 43);
+
+11. UPDATE owners SET age=30 WHERE name='Jane';
+
+12. UPDATE owners SET name='Janet' WHERE name='Jane';
+
+13. INSERT INTO property (name, units, owner_id) VALUES ('Archstone, 20, 1);
+
+14. DELETE FROM owners WHERE name='Janet';
+
+15. SELECT * FROM property 
+
+16. SELECT COUNT (*) FROM property;
+
+17. SELECT MAX(age) FROM owners;
+
+18. SELECT * FROM owners ORDER BY id ASC LIMIT 3;
+
+19. ALTER TABLE property ADD CONSTRAINT owners_fk FOREIGN KEY (owner_id) REFERENCES owners (id) ON DELETE NO ACTION;
+
+20. \d+
